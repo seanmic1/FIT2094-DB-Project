@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B5BD6807-538B-46ED-2EE1-E72B8146B90F" name="MM_MEMBER">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>8FBD11BA-3D2B-6A1F-8376-543881679441</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="mem_no" id="49B229C2-20BA-8312-E312-5191DAADF3C6">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
+<generatorID>1629255C-801A-220A-A550-F5480C68B05B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mem_name" id="1106B93E-8674-68EA-06D0-42D328458872">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member name]]></commentInRDBMS>
+<generatorID>0673076A-7F00-92B7-9868-055AD8A7CD29</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mem_address" id="9AAD150B-EF11-3D6F-0DA6-56CF1DA6C7DF">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member address]]></commentInRDBMS>
+<generatorID>E37B0BBF-E7E4-537C-7B5C-DB825E903E4B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mem_phoneno" id="3E51F87F-7F31-F5D3-11CB-722DA4763C0B">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member phone number]]></commentInRDBMS>
+<generatorID>B2F2EFF1-53FD-924D-79B3-0A9EC27C730F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mem_joindate" id="277AE44B-96B2-6699-FCF7-96777F84B3F5">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member join date]]></commentInRDBMS>
+<generatorID>D93411D8-5CD7-9AD7-BD34-A53C54C9EC3A</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cent_id" id="D4E51FE7-3EF5-CAED-ED1C-62CBAD24F00D">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Center ID]]></commentInRDBMS>
+<generatorID>4F0FB2CC-C51C-C31A-693D-2A11D3DB2637</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE559336-8A0D-282E-E648-3F8A1FED6B35" referredColumn="9A71A764-98F4-ED56-ECFF-14EAC0167EDD"/>
+</associations>
+</Column>
+<Column name="mem_no1" id="34533D85-03C7-D1D8-47DD-4BE9D8E9FD6E">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
+<generatorID>A6EF4962-4FB5-A71E-6ED1-CCE6CC5CA41A</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6316D15A-4AA7-0BE2-051D-62E4BB1AC6E8" referredColumn="49B229C2-20BA-8312-E312-5191DAADF3C6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D777C12-8AE4-3031-F934-71036878FAFE" name="MEMBER_PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>6ADC8F5C-83E0-29F5-7098-8673F7FF7CD1</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49B229C2-20BA-8312-E312-5191DAADF3C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B644F4FE-5E26-A21B-58A6-9EF929EFBACE" name="CENTRE_MEMBER">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>FD5D6642-4828-6190-8D26-4469B32DDA4F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4E51FE7-3EF5-CAED-ED1C-62CBAD24F00D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB83206A-1264-7A3F-A66E-FDBEA068C72A" name="MEMBER_REFERRAL">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>F9190243-2639-09DC-93ED-2F823AA8854A</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34533D85-03C7-D1D8-47DD-4BE9D8E9FD6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

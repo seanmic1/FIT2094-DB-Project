@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2F2FF104-3F17-BC88-EC4B-2EA6D46137C8" name="CLASS_REGISTRATION">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:32:42 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="reg_id" id="288DB1E8-5732-479D-F2BA-6FAA5F811BC2">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 14:19:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Registration ID]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mem_no" id="DA108DD2-BC67-B705-21CC-72702A9E7909">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 14:40:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
+<generatorID>B2EBE350-EB95-0DE9-8716-EF1ECF113F37</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<referedAttribute>1629255C-801A-220A-A550-F5480C68B05B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_no" id="DB747990-4CE0-2300-2E87-E78E775EDADC">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 14:41:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class number]]></commentInRDBMS>
+<generatorID>01E40741-8C1B-7F00-D1C5-D35EC14BF75E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<referedAttribute>49A2770A-5D80-8486-2843-5D02CA2F7D6B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cent_id" id="90491FD8-F933-2D9D-7E90-A43FF38D61EF">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 14:50:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Center ID]]></commentInRDBMS>
+<generatorID>01E40741-8C1B-7F00-D1C5-D35EC14BF75E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<referedAttribute>40C88CFE-F420-AF96-80F8-952BCCCB0983</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reg_pay_date" id="DD70FA96-2625-EC7E-258F-0A8B30E34C8D">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:32:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date of payment of registration]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reg_total_attendance" id="344B7046-083F-3E10-1B31-30A89809C53B">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 15:40:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Total times the member has attended a session of the class]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="36E5488A-02DA-1E34-26A9-7F5ACCB82759" name="PAYMENT PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 14:40:47 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>288DB1E8-5732-479D-F2BA-6FAA5F811BC2</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="8E2BB9D7-C352-0057-9EC5-B6DFEF5E06EB" name="registration_id">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 14:20:12 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<newElementsIDs>90491FD8-F933-2D9D-7E90-A43FF38D61EF,DB747990-4CE0-2300-2E87-E78E775EDADC,DA108DD2-BC67-B705-21CC-72702A9E7909</newElementsIDs>
+<usedAttributes>
+<attributeRef>90491FD8-F933-2D9D-7E90-A43FF38D61EF</attributeRef>
+<attributeRef>DB747990-4CE0-2300-2E87-E78E775EDADC</attributeRef>
+<attributeRef>DA108DD2-BC67-B705-21CC-72702A9E7909</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

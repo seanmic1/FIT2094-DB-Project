@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="MEMBER_PAYMENT" directorySegmentName="seg_0" id="B2EBE350-EB95-0DE9-8716-EF1ECF113F37">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 14:40:47 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<sourcePk>6ADC8F5C-83E0-29F5-7098-8673F7FF7CD1</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>makes</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8FBD11BA-3D2B-6A1F-8376-543881679441</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2F2FF104-3F17-BC88-EC4B-2EA6D46137C8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2848F88D-1053-2619-8EA7-41884755BFFD" name="FACILITY">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:22:08 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="fac_roomno" id="29896972-DEB4-E0A2-698E-8C2E15D261FF">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:22:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Facility room number]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cent_id" id="73373F21-105A-5D85-CE47-9FE25FBCFEF4">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:41:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Center ID]]></commentInRDBMS>
+<generatorID>15C85577-4E2F-020B-8EBF-48CAC8F7E599</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<referedAttribute>C891A240-EA66-7D07-AAAB-B3D0BAC169DC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fac_name" id="6382988C-53FD-83D6-EC4D-D8696024BB9A">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:23:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Facility name]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fac_desc" id="3DDB1F22-568A-F29A-69FF-0A011D49BBF4">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:24:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Facility description]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fac_capacity" id="72704F7F-E6EC-C657-BBA2-E013706530CC">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:24:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Facility max capacity]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7B27899B-EEF9-C4F3-DB5F-95316FD00C29" name="FACILITY PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:22:48 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>29896972-DEB4-E0A2-698E-8C2E15D261FF</attributeRef>
+<attributeRef>73373F21-105A-5D85-CE47-9FE25FBCFEF4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

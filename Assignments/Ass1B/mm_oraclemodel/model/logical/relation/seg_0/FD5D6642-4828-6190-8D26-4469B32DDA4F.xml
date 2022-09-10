@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CENTRE_MEMBER" directorySegmentName="seg_0" id="FD5D6642-4828-6190-8D26-4469B32DDA4F">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 14:35:18 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<sourcePk>6700BD52-49EB-058C-284A-A9915FA6D9AE</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>is the home centre of</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A0523C7C-BD60-FDED-C261-C0771758C0B7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8FBD11BA-3D2B-6A1F-8376-543881679441</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

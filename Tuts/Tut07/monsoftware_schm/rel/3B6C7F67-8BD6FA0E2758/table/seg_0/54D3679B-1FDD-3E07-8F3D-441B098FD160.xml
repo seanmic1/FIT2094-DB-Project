@@ -1,0 +1,230 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="54D3679B-1FDD-3E07-8F3D-441B098FD160" name="EMPLOYEE">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<generatorID>CE142BB7-585E-3E36-FE64-042402963996</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="emp_no" id="EFFFA312-CCD2-3C4D-391F-146C09EB8E74">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee number]]></commentInRDBMS>
+<generatorID>8B58D78D-F0F9-33BA-AC27-FDF5DEA19D41</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_fname" id="AE5E44F2-2F64-922C-8891-4151F9CA8079">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee first name]]></commentInRDBMS>
+<generatorID>B02A4EBE-1BCF-EC1F-039B-2002A12AF00A</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_lname" id="3CBEF00D-2B67-B331-9A66-26F7C7CFDA1C">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee last name]]></commentInRDBMS>
+<generatorID>049F917C-A05B-16D2-C56C-77EABC12FADF</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_street" id="141AC991-0D4C-3CF4-F8DD-0619DD5E06BD">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee address street]]></commentInRDBMS>
+<generatorID>D693CB5B-2015-102D-9CFC-6711EF29BD86</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_town" id="C86DB2C7-F141-7477-EE4A-0F3309D1E179">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee address town]]></commentInRDBMS>
+<generatorID>CAA77918-59FD-7DD4-0935-C6011296FEBD</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_pcode" id="F1F673FD-7CAC-37AD-6D76-44C4778B7B96">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee post code]]></commentInRDBMS>
+<generatorID>0D5886A9-83C3-ECCE-7317-8FCCA73D3731</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_dob" id="BDE431E5-A816-EB93-BCDB-5846942A79FD">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee date of birth]]></commentInRDBMS>
+<generatorID>CEF7CCA1-D28F-F130-F4D5-81369AF71D84</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_taxno" id="658EB2DD-AA29-F5AD-70CE-8BC43E61E85A">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee tax number]]></commentInRDBMS>
+<generatorID>256C5C25-3C57-A557-6480-C75220DAFB36</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEAM_team_no1" id="C3E50442-BDE7-E900-5F33-E3151AC1FC85">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[team number]]></commentInRDBMS>
+<generatorID>FFCD9A19-5D06-4360-E566-44338697BBC2</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DAB43396-2D73-8C1F-35D5-29D5F45674CA" referredColumn="7151388E-3165-3CB3-CE1C-380EA682F2FF"/>
+</associations>
+</Column>
+<Column name="TEAM_team_no" id="B3E4C459-058E-A4C9-38CD-B7B2D3C3E35F">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[team number]]></commentInRDBMS>
+<generatorID>52BAC0F5-B680-F82C-781F-14CDBFA7B950</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="493281C0-2689-D71D-6597-DDD96713CFF1" referredColumn="7151388E-3165-3CB3-CE1C-380EA682F2FF"/>
+</associations>
+</Column>
+<Column name="EMPLOYEE_emp_no" id="0938B138-1AE5-A803-E6DE-AB6AA091B7F5">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee number]]></commentInRDBMS>
+<generatorID>944EEB7E-0EED-4329-CA3F-354F5491B20C</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9F8C265-544F-94F6-DD53-E0E76D2EF4E1" referredColumn="EFFFA312-CCD2-3C4D-391F-146C09EB8E74"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="68C9BB25-5BA2-5860-653A-48AF6D7CFC55" name="EMPLOYEE_PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<generatorID>75B6C43F-B4DB-0A1D-290E-DDDE9DDC0B35</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFFFA312-CCD2-3C4D-391F-146C09EB8E74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A78AB1B7-BD22-2478-97CF-E30FEBB78AFB" name="EMPLOYEE__IDX">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>E12C5B2A-6315-6DA7-36F6-0D6E827D1F8B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="B3E4C459-058E-A4C9-38CD-B7B2D3C3E35F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E085D2D-66F0-B335-5B7F-82549FC10617" name="EMPLOYEE_EMPLOYEE">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<generatorID>5D222BE3-E777-268D-43FD-7C534685E2B5</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0938B138-1AE5-A803-E6DE-AB6AA091B7F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="51903885-FDDC-118B-5429-5A1680825F47" name="EMPLOYEE_TEAMv1">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<generatorID>E12C5B2A-6315-6DA7-36F6-0D6E827D1F8B</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3E4C459-058E-A4C9-38CD-B7B2D3C3E35F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2A48E17-F420-4916-6BA7-7C8EADB49E5B" name="TEAM_EMPLOYEE">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<generatorID>B8128C90-9EA3-1983-3CF9-AC3AE258F557</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3E50442-BDE7-E900-5F33-E3151AC1FC85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

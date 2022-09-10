@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FE298ABA-F8B9-FD3F-9FBA-09E73BDBFB4C" name="STAFF_ROLE">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>26D7882D-BB19-8C32-3FF2-5246B01B3729</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="staffrole_code" id="18BC8AEE-C9C4-9452-95FE-A4F048A91595">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code for the role of the staff:
+Administration (A)
+Cleaner (C)
+Instructor Dry (D)
+Instructor Pool (P)
+Manager (only one per centre) (M)
+Sales (S)
+Security (T)
+]]></commentInRDBMS>
+<generatorID>6FE70303-E0DB-B207-526A-EF99C88969FF</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<constraintName>role_codes</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="A" description="Administration"/>
+<valueDef value="C" description="Cleaner"/>
+<valueDef value="D" description="Instructor Dry"/>
+<valueDef value="M" description="Manager"/>
+<valueDef value="P" description="Instructor Pool"/>
+<valueDef value="S" description="Sales"/>
+<valueDef value="T" description="Security"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staffrole_desc" id="2AD764A6-09FF-C479-CDEF-F7DBFCCF1329">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Staff role description]]></commentInRDBMS>
+<generatorID>BD4EF114-E301-0138-2ACC-FE3212D01E7F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="91865D49-B604-17AD-DF45-C8173C2960EF" name="STAFF_ROLE_PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>EFAD5713-FBCD-5BC3-D378-0609D7D6DF74</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18BC8AEE-C9C4-9452-95FE-A4F048A91595"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B5E31DB7-0180-BA1E-362D-C2BE5A1CC9DB" name="TEAM">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:14:08 UTC</createdTime>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<engineerTo>
+<item key="3B6C7F67-E037-23A6-A0A2-8BD6FA0E2758" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="team_no" id="5F227AAF-89E0-ADD4-D3B3-816B9DD99C9C">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:14:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[team number]]></commentInRDBMS>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<engineerTo>
+<item key="3B6C7F67-E037-23A6-A0A2-8BD6FA0E2758" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_no" id="DD9801E0-E574-E98B-82EC-744631814131">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:27:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee number]]></commentInRDBMS>
+<generatorID>E12C5B2A-6315-6DA7-36F6-0D6E827D1F8B</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<engineerTo>
+<item key="3B6C7F67-E037-23A6-A0A2-8BD6FA0E2758" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8B58D78D-F0F9-33BA-AC27-FDF5DEA19D41</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D22F70F9-59D8-5B81-B550-13B4DB0B692B" name="TEAM PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:14:27 UTC</createdTime>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<engineerTo>
+<item key="3B6C7F67-E037-23A6-A0A2-8BD6FA0E2758" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5F227AAF-89E0-ADD4-D3B3-816B9DD99C9C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

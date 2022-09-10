@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="182F53F9-D9A0-5BD4-86DE-CAA71318AB67" name="STAFFING">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 15:05:36 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="class_no" id="A54B97C9-5C05-9E99-CEFC-04DD64A91615">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 15:08:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class number]]></commentInRDBMS>
+<generatorID>A8C2AB86-7BE8-F7FA-FE6A-0D330D54AEE7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<referedAttribute>49A2770A-5D80-8486-2843-5D02CA2F7D6B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cent_id" id="3F668737-BF4E-ABE1-C453-1432D9CE8D05">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 15:08:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Center ID]]></commentInRDBMS>
+<generatorID>A8C2AB86-7BE8-F7FA-FE6A-0D330D54AEE7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<referedAttribute>40C88CFE-F420-AF96-80F8-952BCCCB0983</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="staff_id" id="CFF7CC4E-10E8-F581-7B57-9A70ED4F4F57">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 15:22:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Staff ID]]></commentInRDBMS>
+<generatorID>927D6DDD-63F8-29BF-4E11-0D940482B3DE</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<referedAttribute>748A7818-082B-75C3-0993-5CB142A2CF55</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="staffing_leader" id="90FA44A8-98AD-A42E-FF3B-A3AE29CA42DB">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 15:05:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[If staff is the leader for the class, Y for yes or N for no]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="staffing_firstaidcertified" id="FDC2742B-CCF7-0843-30CA-4BA5667E660A">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 15:05:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[If staff in the class is first aid certified, Y for yes or N for no]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="93C51F21-415B-C027-BB22-13152ECA6BF7" name="CLASS_STAFF PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 15:11:09 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A54B97C9-5C05-9E99-CEFC-04DD64A91615</attributeRef>
+<attributeRef>3F668737-BF4E-ABE1-C453-1432D9CE8D05</attributeRef>
+<attributeRef>CFF7CC4E-10E8-F581-7B57-9A70ED4F4F57</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

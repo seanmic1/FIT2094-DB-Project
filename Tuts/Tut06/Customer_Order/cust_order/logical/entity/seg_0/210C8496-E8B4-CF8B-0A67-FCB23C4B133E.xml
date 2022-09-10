@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="210C8496-E8B4-CF8B-0A67-FCB23C4B133E" name="PRODUCT">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-02 01:53:08 UTC</createdTime>
+<ownerDesignName>cust_order</ownerDesignName>
+<engineerTo>
+<item key="22363396-0A08-AF2A-1122-14EBDB9ED1DF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="prod_no" id="45C8C59F-A8E6-F57C-8605-5C2C41846172">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-02 01:53:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[product number]]></commentInRDBMS>
+<ownerDesignName>cust_order</ownerDesignName>
+<engineerTo>
+<item key="22363396-0A08-AF2A-1122-14EBDB9ED1DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prod_desc" id="3BBF6BD0-F288-C59A-2DBA-B13CC5ECDF05">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-02 01:53:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[product description]]></commentInRDBMS>
+<ownerDesignName>cust_order</ownerDesignName>
+<engineerTo>
+<item key="22363396-0A08-AF2A-1122-14EBDB9ED1DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prod_unitprice" id="30E0B610-324A-8CBE-55FA-873CE0A3E4D9">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-02 01:54:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[product unit price]]></commentInRDBMS>
+<ownerDesignName>cust_order</ownerDesignName>
+<engineerTo>
+<item key="22363396-0A08-AF2A-1122-14EBDB9ED1DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pcat_id" id="D8E9CCF7-9566-98DF-6934-84BBDEC2C97B">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-02 02:09:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[product category id]]></commentInRDBMS>
+<generatorID>9A515DBB-A2A0-B457-4F38-E1F3D0C93E48</generatorID>
+<ownerDesignName>cust_order</ownerDesignName>
+<engineerTo>
+<item key="22363396-0A08-AF2A-1122-14EBDB9ED1DF" value="true"/>
+</engineerTo>
+<referedAttribute>245351F2-9BE7-336A-4BC9-ECDC99732F51</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="63CFD522-DA76-6651-2258-76EA89E53235" name="PRODUCT PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-02 01:53:35 UTC</createdTime>
+<ownerDesignName>cust_order</ownerDesignName>
+<engineerTo>
+<item key="22363396-0A08-AF2A-1122-14EBDB9ED1DF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>45C8C59F-A8E6-F57C-8605-5C2C41846172</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B0ED6C9D-66B1-DEC0-AD90-7977D8E1B76C" name="CLASS_TYPE">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>F5C14A9A-1C95-73F8-DC67-1BC43AF0C6DF</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="classtype_id" id="E2872E17-7817-B829-8A7A-65BE3EE61FFB">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class type ID]]></commentInRDBMS>
+<generatorID>FA6EE1C4-FEAD-A8CE-606A-D3BDD5B6DF9F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="classtype_desc" id="433D800D-BF53-80C6-BD37-D9A24BF0A4C5">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class type description]]></commentInRDBMS>
+<generatorID>66CC6A0A-F681-7260-1D1C-D0CDB0E92996</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E4AEC83A-811F-FFAC-0F79-1BCF4F199886" name="CLASS_TYPE_PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>B21585AA-F7E7-45C8-2298-57798D38BEC2</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2872E17-7817-B829-8A7A-65BE3EE61FFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F5C14A9A-1C95-73F8-DC67-1BC43AF0C6DF" name="CLASS_TYPE">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 14:48:14 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="classtype_id" id="FA6EE1C4-FEAD-A8CE-606A-D3BDD5B6DF9F">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 14:48:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class type ID]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="classtype_desc" id="66CC6A0A-F681-7260-1D1C-D0CDB0E92996">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 14:48:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class type description]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B21585AA-F7E7-45C8-2298-57798D38BEC2" name="CLASS_TYPE PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 14:49:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>FA6EE1C4-FEAD-A8CE-606A-D3BDD5B6DF9F</newElementsIDs>
+<usedAttributes>
+<attributeRef>FA6EE1C4-FEAD-A8CE-606A-D3BDD5B6DF9F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

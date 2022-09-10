@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CENTRE_FACILITY" directorySegmentName="seg_0" id="15C85577-4E2F-020B-8EBF-48CAC8F7E599">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:41:10 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<sourcePk>6700BD52-49EB-058C-284A-A9915FA6D9AE</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>has</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A0523C7C-BD60-FDED-C261-C0771758C0B7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2848F88D-1053-2619-8EA7-41884755BFFD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

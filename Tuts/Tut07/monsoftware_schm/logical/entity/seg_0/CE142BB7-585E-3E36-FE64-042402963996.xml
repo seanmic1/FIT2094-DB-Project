@@ -1,0 +1,198 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CE142BB7-585E-3E36-FE64-042402963996" name="EMPLOYEE">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:15:03 UTC</createdTime>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<engineerTo>
+<item key="3B6C7F67-E037-23A6-A0A2-8BD6FA0E2758" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="emp_no" id="8B58D78D-F0F9-33BA-AC27-FDF5DEA19D41">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:15:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee number]]></commentInRDBMS>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<engineerTo>
+<item key="3B6C7F67-E037-23A6-A0A2-8BD6FA0E2758" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_fname" id="B02A4EBE-1BCF-EC1F-039B-2002A12AF00A">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:15:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee first name]]></commentInRDBMS>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<engineerTo>
+<item key="3B6C7F67-E037-23A6-A0A2-8BD6FA0E2758" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_lname" id="049F917C-A05B-16D2-C56C-77EABC12FADF">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:15:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee last name]]></commentInRDBMS>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<engineerTo>
+<item key="3B6C7F67-E037-23A6-A0A2-8BD6FA0E2758" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_street" id="D693CB5B-2015-102D-9CFC-6711EF29BD86">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:16:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee address street]]></commentInRDBMS>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<engineerTo>
+<item key="3B6C7F67-E037-23A6-A0A2-8BD6FA0E2758" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_town" id="CAA77918-59FD-7DD4-0935-C6011296FEBD">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:16:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee address town]]></commentInRDBMS>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<engineerTo>
+<item key="3B6C7F67-E037-23A6-A0A2-8BD6FA0E2758" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_pcode" id="0D5886A9-83C3-ECCE-7317-8FCCA73D3731">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:16:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee post code]]></commentInRDBMS>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<engineerTo>
+<item key="3B6C7F67-E037-23A6-A0A2-8BD6FA0E2758" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_dob" id="CEF7CCA1-D28F-F130-F4D5-81369AF71D84">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:17:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee date of birth]]></commentInRDBMS>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<engineerTo>
+<item key="3B6C7F67-E037-23A6-A0A2-8BD6FA0E2758" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_taxno" id="256C5C25-3C57-A557-6480-C75220DAFB36">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:17:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee tax number]]></commentInRDBMS>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<engineerTo>
+<item key="3B6C7F67-E037-23A6-A0A2-8BD6FA0E2758" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="team_no" id="FFCD9A19-5D06-4360-E566-44338697BBC2">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:25:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[team number]]></commentInRDBMS>
+<generatorID>B8128C90-9EA3-1983-3CF9-AC3AE258F557</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<engineerTo>
+<item key="3B6C7F67-E037-23A6-A0A2-8BD6FA0E2758" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5F227AAF-89E0-ADD4-D3B3-816B9DD99C9C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="team_no1" id="52BAC0F5-B680-F82C-781F-14CDBFA7B950">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:27:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[team number]]></commentInRDBMS>
+<generatorID>E12C5B2A-6315-6DA7-36F6-0D6E827D1F8B</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<engineerTo>
+<item key="3B6C7F67-E037-23A6-A0A2-8BD6FA0E2758" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5F227AAF-89E0-ADD4-D3B3-816B9DD99C9C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_no1" id="944EEB7E-0EED-4329-CA3F-354F5491B20C">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:28:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee number]]></commentInRDBMS>
+<generatorID>5D222BE3-E777-268D-43FD-7C534685E2B5</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<engineerTo>
+<item key="3B6C7F67-E037-23A6-A0A2-8BD6FA0E2758" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8B58D78D-F0F9-33BA-AC27-FDF5DEA19D41</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="75B6C43F-B4DB-0A1D-290E-DDDE9DDC0B35" name="EMPLOYEE PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:15:22 UTC</createdTime>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<engineerTo>
+<item key="3B6C7F67-E037-23A6-A0A2-8BD6FA0E2758" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8B58D78D-F0F9-33BA-AC27-FDF5DEA19D41</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

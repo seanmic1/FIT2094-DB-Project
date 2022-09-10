@@ -1,0 +1,169 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8CD64625-C11F-C6C3-A7FB-8130018A7771" name="STAFFING">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>182F53F9-D9A0-5BD4-86DE-CAA71318AB67</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="class_no" id="A06BA449-DED0-CF9B-908A-DD6082C944EE">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class number]]></commentInRDBMS>
+<generatorID>A54B97C9-5C05-9E99-CEFC-04DD64A91615</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2D8DF23-1E2F-9C19-FA90-A11D3BAFE0C9" referredColumn="81782987-E423-0717-DB28-DD3C8BC745B9"/>
+</associations>
+</Column>
+<Column name="cent_id" id="4E55843C-22D0-25DB-BC00-599D13D8A361">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Center ID]]></commentInRDBMS>
+<generatorID>3F668737-BF4E-ABE1-C453-1432D9CE8D05</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2D8DF23-1E2F-9C19-FA90-A11D3BAFE0C9" referredColumn="8609C35E-133E-1269-CE57-377FD4C49ABF"/>
+</associations>
+</Column>
+<Column name="staff_id" id="D50483BC-1435-3084-4FBD-D0C472D90087">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Staff ID]]></commentInRDBMS>
+<generatorID>CFF7CC4E-10E8-F581-7B57-9A70ED4F4F57</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D991F546-3CBA-0324-25A6-AF0CD370BF0A" referredColumn="0474CE66-7BA8-7C7D-79D6-C3AC1D3568D4"/>
+</associations>
+</Column>
+<Column name="staffing_leader" id="E5EA5635-0FDD-E9DA-B63A-C613EC2B4986">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[If staff is the leader for the class, Y for yes or N for no]]></commentInRDBMS>
+<generatorID>90FA44A8-98AD-A42E-FF3B-A3AE29CA42DB</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staffing_firstaidcertified" id="4D7663D8-E07F-70C0-2238-CB6E55365619">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[If staff in the class is first aid certified, Y for yes or N for no]]></commentInRDBMS>
+<generatorID>FDC2742B-CCF7-0843-30CA-4BA5667E660A</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MM_CLASS_fac_roomno" id="2A7DE53A-6104-61B1-1E80-4F18FE377232">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:24:08 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2D8DF23-1E2F-9C19-FA90-A11D3BAFE0C9" referredColumn="780F0754-C611-DE09-0A22-3070BF7D186B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5193BD15-4A66-6BCC-08E8-B64D4B9A65DE" name="CLASS_STAFF_PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>93C51F21-415B-C027-BB22-13152ECA6BF7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A06BA449-DED0-CF9B-908A-DD6082C944EE"/>
+<colUsage columnID="4E55843C-22D0-25DB-BC00-599D13D8A361"/>
+<colUsage columnID="D50483BC-1435-3084-4FBD-D0C472D90087"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="10CB9509-DEEB-7B3B-6CB1-675A298755E9" name="STAFFING__IDX">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>A8C2AB86-7BE8-F7FA-FE6A-0D330D54AEE7</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A06BA449-DED0-CF9B-908A-DD6082C944EE"/>
+<colUsage columnID="4E55843C-22D0-25DB-BC00-599D13D8A361"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42F8BBF1-49FD-E23F-FC7F-D9F610C5DEA5" name="STAFFING__IDXv1">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:24:08 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>A8C2AB86-7BE8-F7FA-FE6A-0D330D54AEE7</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A06BA449-DED0-CF9B-908A-DD6082C944EE"/>
+<colUsage columnID="4E55843C-22D0-25DB-BC00-599D13D8A361"/>
+<colUsage columnID="2A7DE53A-6104-61B1-1E80-4F18FE377232"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A9536040-DE93-F72C-F1E2-1B3403AC6215" name="CLASS_CLASSSTAFF">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>A8C2AB86-7BE8-F7FA-FE6A-0D330D54AEE7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A06BA449-DED0-CF9B-908A-DD6082C944EE"/>
+<colUsage columnID="4E55843C-22D0-25DB-BC00-599D13D8A361"/>
+<colUsage columnID="2A7DE53A-6104-61B1-1E80-4F18FE377232"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D7024992-25D8-96C0-241C-D39CB6DBCA84" name="CLASSTAFF_STAFF">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>927D6DDD-63F8-29BF-4E11-0D940482B3DE</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D50483BC-1435-3084-4FBD-D0C472D90087"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

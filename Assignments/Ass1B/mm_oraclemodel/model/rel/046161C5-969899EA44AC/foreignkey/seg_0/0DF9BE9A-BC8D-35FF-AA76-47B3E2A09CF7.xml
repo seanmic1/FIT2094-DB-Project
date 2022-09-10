@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0DF9BE9A-BC8D-35FF-AA76-47B3E2A09CF7" containerWithKeyObject="4E3FD33A-CA7D-03AE-29D0-5A43C0153E8E" localFKIndex="95F59E36-F8A3-1F73-C0E5-F9F43D3B663F" name="STAFFROLE_STAFF">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>228ABEAF-D981-E402-0123-03441358B1CA</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<referredTableLongName>STAFF_ROLE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FE298ABA-F8B9-FD3F-9FBA-09E73BDBFB4C</referredTableID>
+<keyObject>91865D49-B604-17AD-DF45-C8173C2960EF</keyObject>
+<referredKeyID>91865D49-B604-17AD-DF45-C8173C2960EF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>staffrole_code</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

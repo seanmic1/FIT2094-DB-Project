@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="MEMBER_CLASSSESSION" directorySegmentName="seg_0" id="699DC621-5142-4797-8A4C-3B3419240D55">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 15:53:41 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<sourcePk>6ADC8F5C-83E0-29F5-7098-8673F7FF7CD1</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>has</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8FBD11BA-3D2B-6A1F-8376-543881679441</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>11547CAD-E7CF-7664-A40A-1F9451D898E7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="11547CAD-E7CF-7664-A40A-1F9451D898E7" name="ATTENDANCE">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 15:50:21 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="session_date" id="70B167DE-004C-9920-DFC5-D1DB31EA5469">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 15:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date of the session of a class]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_no" id="65D0D678-A4FA-F028-16C0-2E7289CB7183">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 15:52:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class number]]></commentInRDBMS>
+<generatorID>4ECB5D60-D2B6-2461-DB66-EA8F2D661ACA</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<referedAttribute>49A2770A-5D80-8486-2843-5D02CA2F7D6B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cent_id" id="46EF6A9F-8C82-F742-15F7-0878AE1CADC3">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 15:52:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Center ID]]></commentInRDBMS>
+<generatorID>4ECB5D60-D2B6-2461-DB66-EA8F2D661ACA</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<referedAttribute>40C88CFE-F420-AF96-80F8-952BCCCB0983</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mem_no" id="7F1BA8E3-1786-EC22-75B7-2474869AEF4D">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 15:53:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
+<generatorID>699DC621-5142-4797-8A4C-3B3419240D55</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<referedAttribute>1629255C-801A-220A-A550-F5480C68B05B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="session_attendance" id="284BDE43-5CBE-2B35-BDF2-E095A3A128B5">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 15:51:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[If the member attended the session, Y for yes or N for no]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DFC7A928-D918-DBEC-0B26-D1E875BF77CD" name="CLASS_SESSION PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 15:51:30 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>70B167DE-004C-9920-DFC5-D1DB31EA5469</attributeRef>
+<attributeRef>65D0D678-A4FA-F028-16C0-2E7289CB7183</attributeRef>
+<attributeRef>46EF6A9F-8C82-F742-15F7-0878AE1CADC3</attributeRef>
+<attributeRef>7F1BA8E3-1786-EC22-75B7-2474869AEF4D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

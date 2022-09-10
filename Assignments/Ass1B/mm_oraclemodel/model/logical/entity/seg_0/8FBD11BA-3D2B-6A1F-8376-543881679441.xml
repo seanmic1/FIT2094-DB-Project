@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8FBD11BA-3D2B-6A1F-8376-543881679441" name="MM_MEMBER">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:05:56 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="mem_no" id="1629255C-801A-220A-A550-F5480C68B05B">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mem_name" id="0673076A-7F00-92B7-9868-055AD8A7CD29">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:06:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member name]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mem_address" id="E37B0BBF-E7E4-537C-7B5C-DB825E903E4B">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:08:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member address]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mem_phoneno" id="B2F2EFF1-53FD-924D-79B3-0A9EC27C730F">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:10:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member phone number]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mem_joindate" id="D93411D8-5CD7-9AD7-BD34-A53C54C9EC3A">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:10:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member join date]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cent_id" id="4F0FB2CC-C51C-C31A-693D-2A11D3DB2637">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 14:35:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Center ID]]></commentInRDBMS>
+<generatorID>FD5D6642-4828-6190-8D26-4469B32DDA4F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<referedAttribute>C891A240-EA66-7D07-AAAB-B3D0BAC169DC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mem_no1" id="A6EF4962-4FB5-A71E-6ED1-CCE6CC5CA41A">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 15:00:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
+<generatorID>F9190243-2639-09DC-93ED-2F823AA8854A</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>1629255C-801A-220A-A550-F5480C68B05B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6ADC8F5C-83E0-29F5-7098-8673F7FF7CD1" name="MEMBER PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:06:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1629255C-801A-220A-A550-F5480C68B05B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

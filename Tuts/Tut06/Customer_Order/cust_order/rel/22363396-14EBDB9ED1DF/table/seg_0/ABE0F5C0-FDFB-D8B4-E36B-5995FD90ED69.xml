@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ABE0F5C0-FDFB-D8B4-E36B-5995FD90ED69" name="ORDERS">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-02 02:35:42 UTC</createdTime>
+<generatorID>7DA998C9-9D29-F52D-70E2-1C308BB209AC</generatorID>
+<ownerDesignName>cust_order</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="order_no" id="AADDACAA-8286-4955-6A57-D9BB8A010584">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-02 02:35:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[order number]]></commentInRDBMS>
+<generatorID>38303223-CAF0-5016-E486-AFF7EBCB9D2F</generatorID>
+<ownerDesignName>cust_order</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="order_date" id="49F310FE-C52C-4580-2841-FC68DCC9AD37">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-02 02:35:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[order date]]></commentInRDBMS>
+<generatorID>2B938998-485C-263F-3515-19FD72199B00</generatorID>
+<ownerDesignName>cust_order</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_no" id="1C6041F2-4EEC-5F53-F6AC-F2C0AFE72E01">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-02 02:35:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer number]]></commentInRDBMS>
+<generatorID>0A62818E-CA6B-82AD-F66A-B11DA5ADBC5F</generatorID>
+<ownerDesignName>cust_order</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="655CBFBA-DD50-019D-C674-CF93B0CC32BD" referredColumn="8920A6DD-AD22-A216-D5D5-4EE3F91DB81F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="68244599-3079-75A7-E6B5-AC439DD296C3" name="ORDERS_PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-02 02:35:42 UTC</createdTime>
+<generatorID>E7C87188-B72C-BCFF-16FE-20ABBF3243A2</generatorID>
+<ownerDesignName>cust_order</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AADDACAA-8286-4955-6A57-D9BB8A010584"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E112EB10-F650-F82D-E1FB-1C564459B97A" name="CUSTOMER_ORDERS">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-02 02:35:42 UTC</createdTime>
+<generatorID>DC34A789-60D4-1ABF-5EAC-FF1C316DCFC2</generatorID>
+<ownerDesignName>cust_order</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C6041F2-4EEC-5F53-F6AC-F2C0AFE72E01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

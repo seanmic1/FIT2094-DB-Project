@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="13822AB3-64D3-568F-3856-FB39C7ED40F2" name="ASSESSMENT">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>EC16ED15-C2BC-7996-68A6-B46E6F014E9A</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="assess_date" id="644E8996-BCB5-7D2F-0D32-49F41FC6C66A">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date of assessment]]></commentInRDBMS>
+<generatorID>1C67775A-648B-6B4B-5F62-C10EF613FE2D</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mem_no" id="154C93B6-BE6D-8F86-0B55-337C0DF47487">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
+<generatorID>04A3F2FB-B4F6-E401-8B39-F63B24796A7C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6A10D787-5C3C-8FC1-EFCE-4FD98A0AC069" referredColumn="49B229C2-20BA-8312-E312-5191DAADF3C6"/>
+</associations>
+</Column>
+<Column name="assess_weight" id="D93ABFFC-5A57-42FB-1645-49E5068469CF">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Weight of member in assessment]]></commentInRDBMS>
+<generatorID>B9826EF3-F513-B433-D1C3-61B6B54A95B1</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,4,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="assess_bp" id="5E3805B8-4892-8EAB-ED3B-23A6147E07DB">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Blood pressure of member in assessment]]></commentInRDBMS>
+<generatorID>7CC080B2-FAAB-D709-9B38-D21093A1A141</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="assess_bmi" id="2962A945-A0A9-A1BB-1D98-4991D4A97595">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[BMI of member in assessment]]></commentInRDBMS>
+<generatorID>740D4648-840B-8A9C-5E3D-08A244807CA1</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="assess_vomax" id="8D61DD87-25DC-70A7-0DE9-8920811AE872">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[VO2 max of member in assessment]]></commentInRDBMS>
+<generatorID>621E1A3C-8598-20C3-9E17-72D3832D9E09</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_id" id="45788CD3-FDF7-D168-B38B-B66E573B9586">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Staff ID]]></commentInRDBMS>
+<generatorID>6ED30761-8DCE-6048-F9ED-2D4EA3CDEDD9</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="09AFB78E-0B3A-F704-9280-396F7B169478" referredColumn="0474CE66-7BA8-7C7D-79D6-C3AC1D3568D4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A467C9A3-53E6-4F81-70E3-973C212A28B9" name="ASSESSMENT_PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>47E35E97-0F47-846E-766E-BF455CB9FB89</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="644E8996-BCB5-7D2F-0D32-49F41FC6C66A"/>
+<colUsage columnID="154C93B6-BE6D-8F86-0B55-337C0DF47487"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6585EAF-AC98-A8C8-2DCB-365D2EC81D9A" name="MEMBER_ASSESSMENT">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>7E1F4C39-E16D-B121-B0BA-28DEC00AB155</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="154C93B6-BE6D-8F86-0B55-337C0DF47487"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F936C079-B34B-29F8-F532-D9C75B8B2B24" name="STAFF_ASSESSMENT">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>78E2AEC8-2AC4-207D-2414-ED0D5C22F83C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45788CD3-FDF7-D168-B38B-B66E573B9586"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="66B3DAA8-E43B-15D0-F4FD-FC2D38D2D8BD" name="ATTENDANCE">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>11547CAD-E7CF-7664-A40A-1F9451D898E7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="session_date" id="9881F4E2-6025-C233-2088-445B091F8516">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date of the session of a class]]></commentInRDBMS>
+<generatorID>70B167DE-004C-9920-DFC5-D1DB31EA5469</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="class_no" id="7506FFE5-8343-636F-2F80-BDBA7058AFBE">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class number]]></commentInRDBMS>
+<generatorID>65D0D678-A4FA-F028-16C0-2E7289CB7183</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1254D3F9-1439-5EE6-AEC9-0F2029FADB3E" referredColumn="81782987-E423-0717-DB28-DD3C8BC745B9"/>
+</associations>
+</Column>
+<Column name="cent_id" id="9D25F95B-8000-A18F-9C1C-F66AA9C8C7F7">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Center ID]]></commentInRDBMS>
+<generatorID>46EF6A9F-8C82-F742-15F7-0878AE1CADC3</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1254D3F9-1439-5EE6-AEC9-0F2029FADB3E" referredColumn="8609C35E-133E-1269-CE57-377FD4C49ABF"/>
+</associations>
+</Column>
+<Column name="mem_no" id="8E0672D3-3E34-2B1E-2AE8-060E1640F01A">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
+<generatorID>7F1BA8E3-1786-EC22-75B7-2474869AEF4D</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5147DEE7-B92C-8EDB-79BD-A9058623AB9F" referredColumn="49B229C2-20BA-8312-E312-5191DAADF3C6"/>
+</associations>
+</Column>
+<Column name="session_attendance" id="6B2C1901-D5F3-4357-0EB5-735CD66F2CBC">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[If the member attended the session, Y for yes or N for no]]></commentInRDBMS>
+<generatorID>284BDE43-5CBE-2B35-BDF2-E095A3A128B5</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MM_CLASS_fac_roomno" id="9EA4150F-EF9A-A9A7-505F-C3E452404D7A">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:24:08 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1254D3F9-1439-5EE6-AEC9-0F2029FADB3E" referredColumn="780F0754-C611-DE09-0A22-3070BF7D186B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0F6C9FE3-6942-EC46-9125-A9CD47337E1B" name="CLASS_SESSION_PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>DFC7A928-D918-DBEC-0B26-D1E875BF77CD</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9881F4E2-6025-C233-2088-445B091F8516"/>
+<colUsage columnID="7506FFE5-8343-636F-2F80-BDBA7058AFBE"/>
+<colUsage columnID="9D25F95B-8000-A18F-9C1C-F66AA9C8C7F7"/>
+<colUsage columnID="8E0672D3-3E34-2B1E-2AE8-060E1640F01A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CF1F4A4-A99D-988C-E295-0191A1CABD7F" name="CLASS_CLASSESSION">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>4ECB5D60-D2B6-2461-DB66-EA8F2D661ACA</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7506FFE5-8343-636F-2F80-BDBA7058AFBE"/>
+<colUsage columnID="9D25F95B-8000-A18F-9C1C-F66AA9C8C7F7"/>
+<colUsage columnID="9EA4150F-EF9A-A9A7-505F-C3E452404D7A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1BD912FA-A6EA-73E3-2205-2A84D0F43A25" name="MEMBER_CLASSSESSION">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>699DC621-5142-4797-8A4C-3B3419240D55</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E0672D3-3E34-2B1E-2AE8-060E1640F01A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

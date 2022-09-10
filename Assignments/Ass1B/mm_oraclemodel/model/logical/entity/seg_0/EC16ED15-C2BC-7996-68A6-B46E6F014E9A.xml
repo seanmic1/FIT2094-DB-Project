@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EC16ED15-C2BC-7996-68A6-B46E6F014E9A" name="ASSESSMENT">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:33:34 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="assess_date" id="1C67775A-648B-6B4B-5F62-C10EF613FE2D">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:33:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date of assessment]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mem_no" id="04A3F2FB-B4F6-E401-8B39-F63B24796A7C">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 14:39:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
+<generatorID>7E1F4C39-E16D-B121-B0BA-28DEC00AB155</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<referedAttribute>1629255C-801A-220A-A550-F5480C68B05B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="assess_weight" id="B9826EF3-F513-B433-D1C3-61B6B54A95B1">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:34:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Weight of member in assessment]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,4,1</ownDataTypeParameters>
+</Attribute>
+<Attribute name="assess_bp" id="7CC080B2-FAAB-D709-9B38-D21093A1A141">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:34:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Blood pressure of member in assessment]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="assess_bmi" id="740D4648-840B-8A9C-5E3D-08A244807CA1">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:35:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[BMI of member in assessment]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="assess_vomax" id="621E1A3C-8598-20C3-9E17-72D3832D9E09">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:35:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[VO2 max of member in assessment]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="staff_id" id="6ED30761-8DCE-6048-F9ED-2D4EA3CDEDD9">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 14:39:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Staff ID]]></commentInRDBMS>
+<generatorID>78E2AEC8-2AC4-207D-2414-ED0D5C22F83C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<referedAttribute>748A7818-082B-75C3-0993-5CB142A2CF55</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="47E35E97-0F47-846E-766E-BF455CB9FB89" name="ASSESSMENT PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-14 13:33:55 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="046161C5-C4BF-B63F-98F3-969899EA44AC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1C67775A-648B-6B4B-5F62-C10EF613FE2D</attributeRef>
+<attributeRef>04A3F2FB-B4F6-E401-8B39-F63B24796A7C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

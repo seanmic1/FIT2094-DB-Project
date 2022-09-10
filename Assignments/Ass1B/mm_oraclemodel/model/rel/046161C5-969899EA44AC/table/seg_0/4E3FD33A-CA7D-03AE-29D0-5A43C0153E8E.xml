@@ -1,0 +1,167 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E3FD33A-CA7D-03AE-29D0-5A43C0153E8E" name="STAFF">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>75BBF35E-81A6-34F2-6F8A-DFBBE9F5970D</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="staff_id" id="0474CE66-7BA8-7C7D-79D6-C3AC1D3568D4">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Staff ID]]></commentInRDBMS>
+<generatorID>748A7818-082B-75C3-0993-5CB142A2CF55</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_givenname" id="21F117E6-A746-CBCB-37AF-1F529F75E1FA">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Staff given (first) name]]></commentInRDBMS>
+<generatorID>C1A71989-EE3A-6294-0F2A-A16FE0BCA176</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_famname" id="FD4F1FF0-F6FE-2BD5-885F-071F607DCEEA">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Staff family (last) name]]></commentInRDBMS>
+<generatorID>BEF47A6B-2613-5995-D595-C8EF8FB0EF32</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_mobileno" id="D5FE5BA1-9545-C8DB-59D0-4C6530774689">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Staff mobile number]]></commentInRDBMS>
+<generatorID>D103FF99-ACF3-9C8F-765D-FF3B5AB53D9C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_startdate" id="6BC538D9-745A-A886-61A4-275DCDD5564A">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date that the staff started working in the centre]]></commentInRDBMS>
+<generatorID>8ACD1D4E-43F6-A67E-2F0E-AB4366C8A679</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_phoneno" id="47D77BCB-3C61-ED75-F522-4343E9B9B1CC">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Staff phone number they can be contacted on]]></commentInRDBMS>
+<generatorID>043C4C70-43D7-C479-0A26-1A154E019504</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cent_id" id="5D5448E6-52AF-5EE8-48A4-F7A36947576C">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Center ID]]></commentInRDBMS>
+<generatorID>4BC78C46-A145-7211-6BB3-F153AE7E1313</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="301BE73A-26FE-3C04-7433-4666CEF68343" referredColumn="9A71A764-98F4-ED56-ECFF-14EAC0167EDD"/>
+</associations>
+</Column>
+<Column name="staffrole_code" id="7F87C15F-ADB3-4E92-3D60-FDD120ECCED0">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code for the role of the staff:
+Administration (A)
+Cleaner (C)
+Instructor Dry (D)
+Instructor Pool (P)
+Manager (only one per centre) (M)
+Sales (S)
+Security (T)
+]]></commentInRDBMS>
+<generatorID>804F0963-7086-B05D-4F7F-DD3D94DEBC1E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0DF9BE9A-BC8D-35FF-AA76-47B3E2A09CF7" referredColumn="18BC8AEE-C9C4-9452-95FE-A4F048A91595"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C41D96B2-8DF3-EE80-AF9E-FCA4D8F2485A" name="STAFF_PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>F474FFB0-47F0-7069-D863-4179055E0A4C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0474CE66-7BA8-7C7D-79D6-C3AC1D3568D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87B02A0B-A778-0773-2F9B-2E5C6C460DC1" name="CENTRE_STAFF">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>359CCB0B-117B-940D-BD6E-C9AD1252ADE0</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D5448E6-52AF-5EE8-48A4-F7A36947576C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="95F59E36-F8A3-1F73-C0E5-F9F43D3B663F" name="STAFFROLE_STAFF">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-15 11:21:48 UTC</createdTime>
+<generatorID>228ABEAF-D981-E402-0123-03441358B1CA</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F87C15F-ADB3-4E92-3D60-FDD120ECCED0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

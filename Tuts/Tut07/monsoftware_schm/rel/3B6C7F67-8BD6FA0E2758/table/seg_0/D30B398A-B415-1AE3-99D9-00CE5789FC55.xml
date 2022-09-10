@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D30B398A-B415-1AE3-99D9-00CE5789FC55" name="TEAM">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<generatorID>B5E31DB7-0180-BA1E-362D-C2BE5A1CC9DB</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="team_no" id="7151388E-3165-3CB3-CE1C-380EA682F2FF">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[team number]]></commentInRDBMS>
+<generatorID>5F227AAF-89E0-ADD4-D3B3-816B9DD99C9C</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_emp_no" id="68D4FFC7-B573-5DC7-F1F6-A6745F753B61">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[employee number]]></commentInRDBMS>
+<generatorID>DD9801E0-E574-E98B-82EC-744631814131</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0325C903-A8BF-D40B-1B97-D4767670AA8E" referredColumn="EFFFA312-CCD2-3C4D-391F-146C09EB8E74"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D36A751-C03F-6F05-EAE2-A3D221764E0D" name="TEAM_PK">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<generatorID>D22F70F9-59D8-5B81-B550-13B4DB0B692B</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7151388E-3165-3CB3-CE1C-380EA682F2FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A0F801E-8F96-A9DB-ACAF-0F868F8800AC" name="TEAM__IDX">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>E12C5B2A-6315-6DA7-36F6-0D6E827D1F8B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="68D4FFC7-B573-5DC7-F1F6-A6745F753B61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33C2CCFE-175E-3C01-E87F-7C4B96407D4D" name="EMPLOYEE_TEAM">
+<createdBy>seanl</createdBy>
+<createdTime>2021-09-03 14:30:14 UTC</createdTime>
+<generatorID>E12C5B2A-6315-6DA7-36F6-0D6E827D1F8B</generatorID>
+<ownerDesignName>monsoftware_schm</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="68D4FFC7-B573-5DC7-F1F6-A6745F753B61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

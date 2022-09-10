@@ -1,0 +1,291 @@
+SQL> 
+SQL> DROP TABLE customer CASCADE CONSTRAINTS;
+
+Error starting at line : 9 in command -
+DROP TABLE customer CASCADE CONSTRAINTS
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> DROP TABLE orderline CASCADE CONSTRAINTS;
+
+Error starting at line : 11 in command -
+DROP TABLE orderline CASCADE CONSTRAINTS
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> DROP TABLE orders CASCADE CONSTRAINTS;
+
+Error starting at line : 13 in command -
+DROP TABLE orders CASCADE CONSTRAINTS
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> DROP TABLE prod_category CASCADE CONSTRAINTS;
+
+Error starting at line : 15 in command -
+DROP TABLE prod_category CASCADE CONSTRAINTS
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> DROP TABLE product CASCADE CONSTRAINTS;
+
+Error starting at line : 17 in command -
+DROP TABLE product CASCADE CONSTRAINTS
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> -- predefined type, no DDL - MDSYS.SDO_GEOMETRY
+SQL> 
+SQL> -- predefined type, no DDL - XMLTYPE
+SQL> 
+SQL> CREATE TABLE customer (
+  2      cust_no       NUMBER(7) NOT NULL,
+  3      cust_name     VARCHAR2(50) NOT NULL,
+  4      cust_address  VARCHAR2(50) NOT NULL,
+  5      cust_phone    CHAR(10),
+  6      cust_level    CHAR(1) NOT NULL,
+  7      cust_dob      DATE
+  8  );
+
+Table CUSTOMER created.
+
+SQL> 
+SQL> ALTER TABLE customer
+  2      ADD CONSTRAINT chk_custlevel CHECK ( cust_level IN ( 'B', 'G', 'S' ) );
+
+Table CUSTOMER altered.
+
+SQL> 
+SQL> COMMENT ON COLUMN customer.cust_no IS
+  2      'customer number';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN customer.cust_name IS
+  2      'customer name';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN customer.cust_address IS
+  2      'customer address';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN customer.cust_phone IS
+  2      'customer phone';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN customer.cust_level IS
+  2      'customer level: gold (g), silver (s), or bronze (b)';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN customer.cust_dob IS
+  2      'customer date of birth';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE customer ADD CONSTRAINT customer_pk PRIMARY KEY ( cust_no );
+
+Table CUSTOMER altered.
+
+SQL> 
+SQL> CREATE TABLE orderline (
+  2      orderline_id   NUMBER(7) NOT NULL,
+  3      ol_qtyordered  NUMBER(7) NOT NULL,
+  4      ol_lineprice   NUMBER(7) NOT NULL,
+  5      order_no       NUMBER(7) NOT NULL,
+  6      prod_no        NUMBER(7, 2) NOT NULL
+  7  );
+
+Table ORDERLINE created.
+
+SQL> 
+SQL> COMMENT ON COLUMN orderline.orderline_id IS
+  2      'product surrogate key';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN orderline.ol_qtyordered IS
+  2      'orderline quantity ordered';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN orderline.ol_lineprice IS
+  2      'orderline line price';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN orderline.order_no IS
+  2      'order number';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN orderline.prod_no IS
+  2      'product number';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE orderline ADD CONSTRAINT orderline_pk PRIMARY KEY ( orderline_id );
+
+Table ORDERLINE altered.
+
+SQL> 
+SQL> ALTER TABLE orderline ADD CONSTRAINT orderline_nk UNIQUE ( order_no,
+  2                                                             prod_no );
+
+Table ORDERLINE altered.
+
+SQL> 
+SQL> CREATE TABLE orders (
+  2      order_no    NUMBER(7) NOT NULL,
+  3      order_date  DATE NOT NULL,
+  4      cust_no     NUMBER(7) NOT NULL
+  5  );
+
+Table ORDERS created.
+
+SQL> 
+SQL> COMMENT ON COLUMN orders.order_no IS
+  2      'order number';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN orders.order_date IS
+  2      'order date';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN orders.cust_no IS
+  2      'customer number';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE orders ADD CONSTRAINT orders_pk PRIMARY KEY ( order_no );
+
+Table ORDERS altered.
+
+SQL> 
+SQL> CREATE TABLE prod_category (
+  2      pcat_id    NUMBER(4) NOT NULL,
+  3      pcat_name  VARCHAR2(50) NOT NULL
+  4  );
+
+Table PROD_CATEGORY created.
+
+SQL> 
+SQL> COMMENT ON COLUMN prod_category.pcat_id IS
+  2      'product category id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN prod_category.pcat_name IS
+  2      'product category name';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE prod_category ADD CONSTRAINT prod_category_pk PRIMARY KEY ( pcat_id );
+
+Table PROD_CATEGORY altered.
+
+SQL> 
+SQL> CREATE TABLE product (
+  2      prod_no         NUMBER(7, 2) NOT NULL,
+  3      prod_desc       VARCHAR2(50) NOT NULL,
+  4      prod_unitprice  NUMBER(7) NOT NULL,
+  5      pcat_id         NUMBER(4) NOT NULL
+  6  );
+
+Table PRODUCT created.
+
+SQL> 
+SQL> COMMENT ON COLUMN product.prod_no IS
+  2      'product number';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN product.prod_desc IS
+  2      'product description';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN product.prod_unitprice IS
+  2      'product unit price';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN product.pcat_id IS
+  2      'product category id';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE product ADD CONSTRAINT product_pk PRIMARY KEY ( prod_no );
+
+Table PRODUCT altered.
+
+SQL> 
+SQL> ALTER TABLE orders
+  2      ADD CONSTRAINT customer_orders FOREIGN KEY ( cust_no )
+  3          REFERENCES customer ( cust_no );
+
+Table ORDERS altered.
+
+SQL> 
+SQL> ALTER TABLE orderline
+  2      ADD CONSTRAINT orders_orderline FOREIGN KEY ( order_no )
+  3          REFERENCES orders ( order_no );
+
+Table ORDERLINE altered.
+
+SQL> 
+SQL> ALTER TABLE product
+  2      ADD CONSTRAINT prodcategory_product FOREIGN KEY ( pcat_id )
+  3          REFERENCES prod_category ( pcat_id );
+
+Table PRODUCT altered.
+
+SQL> 
+SQL> ALTER TABLE orderline
+  2      ADD CONSTRAINT product_orderline FOREIGN KEY ( prod_no )
+  3          REFERENCES product ( prod_no );
+
+Table ORDERLINE altered.
+
+SQL> 
+SQL> SPOOL OFF
